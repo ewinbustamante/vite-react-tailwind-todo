@@ -14,7 +14,7 @@ import TodoList from "./components/TodoList";
     { id: 5, title: "Complete Todo App on Frontend Mentor", completed: false },
 ]; */
 
-const initialStateTodos = JSON.parse(localStorage.tailwindTodos) || [];
+const initialStateTodos = JSON.parse(localStorage.getItem("tailwindTodos")) || [];
 
 const reorder = (list, startIndex, endIndex) => {
     const result = [...list];
